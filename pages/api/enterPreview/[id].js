@@ -3,6 +3,8 @@ export default (req, res) => {
   const { query } = req;
   const { id } = query;
 
+  console.log(JSON.stringify(res, null, 2));
+
   // Enable Preview Mode by setting preview mode cookies
   res.setPreviewData({});
 
